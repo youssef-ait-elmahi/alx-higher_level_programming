@@ -1,0 +1,3 @@
+#!/bin/bash
+export PYFILE="${PYFILE}c"
+python3 "$PYFILE"
