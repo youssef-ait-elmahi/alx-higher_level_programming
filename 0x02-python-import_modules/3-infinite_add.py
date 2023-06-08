@@ -5,4 +5,4 @@ if __name__ == "__main__":
     sum = 0
     for i in range(arguments):
         sum += int(argv[i + 1])
-print("{}".format(sum))
+    print(sum)
