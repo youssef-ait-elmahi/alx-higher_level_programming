@@ -1,4 +1,4 @@
-#!/user/bin/python3
+#!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
     for colm in (matrix):
         for row in (colm):
