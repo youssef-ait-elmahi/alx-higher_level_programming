@@ -5,4 +5,4 @@ def delete_at(my_list=[], idx=0):
         return my_list
     else:
         del (helper[idx])
-        return helper
+    return helper
