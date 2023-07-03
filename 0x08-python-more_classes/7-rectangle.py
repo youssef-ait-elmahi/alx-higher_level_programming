@@ -3,7 +3,6 @@
 
 
 class Rectangle:
-
     """
     A class representing a rectangle.
     Attributes:
@@ -13,7 +12,8 @@ class Rectangle:
         No additional methods defined.
     """
     number_of_instances = 0
-
+    print_symbol = "#"
+    
     def __init__(self, width=0, height=0):
         """
         Initializes a new instance of the Rectangle class.
