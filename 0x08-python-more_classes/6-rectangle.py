@@ -3,6 +3,7 @@
 
 
 class Rectangle:
+    number_of_instances = 0
     """
     A class representing a rectangle.
     Attributes:
