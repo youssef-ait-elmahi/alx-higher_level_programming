@@ -11,13 +11,10 @@ def print_square(size):
         ValueError: If size is less than 0.
     """
     if not isinstance(size, int):
-        if isinstance(size, float) and size.is_integer():
-            size = int(size)
-        else:
-            raise TypeError("size must be an integer")
-
+        raise TypeError("size must be an integer")
     if size < 0:
         raise ValueError("size must be >= 0")
 
-    for _ in range(size):
-        print("#" * size)
+    for i in range(size):
+        [print("#", end="") for j in range(size)]
+        print("")
