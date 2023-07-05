@@ -45,7 +45,7 @@ If either argument is a non-integer and non-float, a TypeError is raised:
 
 ::
 
-    >>> add_integer(2, "hello")
+    >>> add_integer(7, "hello")
     Traceback (most recent call last):
     TypeError: b must be an integer
 
@@ -57,7 +57,7 @@ If either argument is a non-integer and non-float, a TypeError is raised:
 
 ::
 
-    >>> add_integer(2.3, None)
+    >>> add_integer(3.3, None)
     Traceback (most recent call last):
     TypeError: b must be an integer
 
@@ -109,17 +109,17 @@ Note that floats are casted to ints before addition is performed.
 
 ::
 
-    >>> add_integer(2.9, 0.2)
+    >>> add_integer(2.8, 0.2)
     2
 
 ::
 
-    >>> add_integer(-2.9, -0.2)
+    >>> add_integer(-2.8, -0.2)
     -2
 
 Floating and non-floating point values can be combined.
 
 ::
 
-    >>> add_integer(2.3, -3)
-    -1
+    >>> add_integer(1.3, -3)
+    -2
