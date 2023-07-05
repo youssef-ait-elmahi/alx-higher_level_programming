@@ -1,3 +1,5 @@
+# 0-add_integer.txt
+# Brennan D Baraban <375@holbertonschool.com>
 
 ===========================
 How to Use 0-add_integer.py
@@ -21,27 +23,6 @@ that value is equivalent to using the ``+`` operator.
 
     >>> add_integer(2, -3)
     -1
-
-The function also works with floating-point values.
-
-::
-
-    >>> add_integer(2.0, 3.0)
-    5
-
-Note that floats are casted to ints before addition is performed.
-
-::
-
-    >>> add_integer(2.9, 0.2)
-    2
-
-::
-
-    >>> add_integer(-2.9, -0.2)
-    -2
-
-Floating and non-floating point values can be combined.
 
 The second argument is optional - by default, it is 98.
 
@@ -82,3 +63,63 @@ If either argument is a non-integer and non-float, a TypeError is raised:
 
 If both arguments are non-integers and non-floats, a TypeError message is only
 printed for the first argument.
+
+::
+
+    >>> add_integer("hello", "there")
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+The function will fail if infinity is provided.
+
+::
+
+    >>> add_integer(float('inf'))
+    Traceback (most recent call last):
+    OverflowError: cannot convert float infinity to integer
+     
+::
+
+    >>> add_integer(2, float('inf'))
+    Traceback (most recent call last):
+    OverflowError: cannot convert float infinity to integer
+
+And again with NaN numbers.
+
+::
+
+    >>> add_integer(float('nan'))
+    Traceback (most recent call last):
+    ValueError: cannot convert float NaN to integer
+
+::
+
+    >>> add_integer(2, float('nan'))
+    Traceback (most recent call last):
+    ValueError: cannot convert float NaN to integer
+
+The function also works with floating-point values.
+
+::
+
+    >>> add_integer(2.0, 3.0)
+    5
+
+Note that floats are casted to ints before addition is performed.
+
+::
+
+    >>> add_integer(2.9, 0.2)
+    2
+
+::
+
+    >>> add_integer(-2.9, -0.2)
+    -2
+
+Floating and non-floating point values can be combined.
+
+::
+
+    >>> add_integer(2.3, -3)
+    -1
