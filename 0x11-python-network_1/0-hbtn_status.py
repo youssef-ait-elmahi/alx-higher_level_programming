@@ -1,9 +1,6 @@
 #!/usr/bin/python3
 """ Python script that fetches a URL """
-
-if __name__ == "__main__":
-    import urllib.request
-
+import urllib.request
 
 url = "https://alx-intranet.hbtn.io/status"
 with urllib.request.urlopen(url) as response:
