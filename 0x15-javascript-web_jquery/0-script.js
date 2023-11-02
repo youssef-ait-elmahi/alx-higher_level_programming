@@ -1,5 +1,5 @@
 // Select the header using document.querySelector
-var header = document.querySelector('header');
+const header = document.querySelector('header');
 
 // Change the color of the text
-header.style.color = "#FF0000";
+header.style.color = '#FF0000';
